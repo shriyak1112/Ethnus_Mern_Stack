@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css task 6</title>
+</head>
+<style>
+    img {
+        margin-left: 41%;
+    }
+
+    .c1 {
+        width: 500px;
+        padding: 10px 9px;
+    }
+
+    .block {
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: #4CB04D;
+        color: white;
+        padding: 10px 9px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .block:hover {
+        transform: translateY(-2px);
+        /* Move button up by 2px */
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        /* Add a shadow */
+    }
+
+    .block2 {
+        color: white;
+        background: #F34133;
+        border: none;
+        border-radius: 10%;
+        padding: 8px 12px;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .block2:hover {
+        transform: translateY(-2px);
+        /* Move button up by 2px */
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        /* Add a shadow */
+    }
+
+    .cancel-forgot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <br>
+    <h2 align="center">TASK-6</h2>
+    <br>
+    <img src="data:image/png;base64,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" alt="USER" width="250" />
+    <form>
+        <center>
+            <table cellpadding="7" cellspacing="0">
+                <tr>
+                    <td><label for="username"><b>Username</b></label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="username" placeholder="Enter Username" class="c1" /></td>
+                </tr>
+                <tr>
+                    <td><label for="username"><b>Password</b></label></td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="username" placeholder="Enter Password" class="c1" /></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Login" class="block"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" />Remember me</td>
+                </tr>
+                <tr bgcolor="#F1F1F1">
+                    <td class="cancel-forgot">
+                        <input type="reset" value="Cancel" class="block2">
+                        <a href="#" style="color:black;">Forgot Password?</a>
+                    </td>
+                </tr>
+
+            </table>
+        </center>
+    </form>
+    <br><br><br>
+
+    <br>
+<br>
+<br>
+<a href="./index.html"><p align="center">Go to Index page</p></a>
+   
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css task 2</title>
+    <style>
+        .left {
+            height: 80vh;
+            width: 40vw;
+            float: left;
+            position: relative;
+            top: 20%;
+
+        }
+
+        .right {
+            height: 80vh;
+            width: 49vw;
+            float: right;
+        }
+
+        /* vertical navigation */
+        /* ul */
+        .i1 {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            width: 150px;
+            border: 2px solid;
+        }
+
+        /* list items and their anchor tag thats why .c1 a */
+        .c1 a {
+            display: block;
+            color: rgb(245, 241, 236);
+            padding: 7px;
+            /*padding from the cell's border*/
+            text-decoration: none;
+            background-color: rgb(43, 122, 125);
+
+        }
+
+        /* to hover over the navigation bar we use :hover */
+        .c1 a:hover {
+            background-color: rgb(225, 149, 6);
+            color: aliceblue;
+        }
+
+        .active {
+            background-color: rgb(225, 149, 6);
+            color: aliceblue;
+        }
+
+
+        /* horizontal navigation bar  */
+        #i2 {
+            list-style-type: none;
+            margin: 0;
+            padding: 7px;
+            overflow: hidden;
+            border: 2px solid;
+            width: 60%;
+
+        }
+
+        .c2 {
+            float: left;
+        }
+
+        .c2 a {
+
+            display: inline;
+            color: rgb(99, 99, 234);
+            padding: 14px 16px;
+            text-decoration: none;
+            background-color: aliceblue;
+        }
+
+        .c2 {
+            border-right: 1px solid #484e85;
+        }
+
+        .c2:last-child {
+            border: none;
+        }
+
+
+        .c2 a:hover {
+            background-color: #e6dba6;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>
+        <p align="center">TASK-2</p>
+    </h2>
+    <div class="left">
+        <h4>Vertical navigation</h4>
+        <br>
+        <ul id="i1" type="none">
+            <li class="c1"><a href="#">Home</a></li>
+            <li class="c1"><a href="#">Java</a></li>
+            <li class="c1"><a href="#">CSS</a></li>
+            <li class="c1"><a href="#">HTML</a></li>
+            <li class="c1"><a href="#">Bootstrap</a></li>
+
+        </ul>
+    </div>
+    <div class="right">
+        <h4> Horizontal navigation</h4>
+        <br>
+        <ul id="i2">
+            <li class="c2"><a href="#">Home</a></li>
+            <li class="c2"><a href="#">Java</a></li>
+            <li class="c2"><a href="#">CSS</a></li>
+            <li class="c2"><a href="#">HTML</a></li>
+            <li class="c2"><a href="#">Bootstrap</a></li>
+
+        </ul>
+
+    </div>
+
+    <br>
+<br>
+<br>
+<a href="./index.html"><p align="center">Go to Index page</p></a>
+
+</body>
+
+</html>
